@@ -1,0 +1,33 @@
+.page {
+  main {
+    ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      li {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    [data-fixed="false"] & {
+      p {
+        line-height: 100%;
+      }
+    }
+
+    [data-fixed="true"] & {
+      ul {
+        gap: var(--density-larger);
+
+        li {
+          gap: var(--density-normal);
+
+          h3 {
+            line-height: 100%;
+          }
+        }
+      }
+    }
+  }
+}

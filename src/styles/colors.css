@@ -1,0 +1,45 @@
+:root {
+  --color-gray-99: hsl(200deg 4% 99%);
+  --color-gray-97: hsl(200deg 4% 97%);
+  --color-gray-93: hsl(200deg 4% 93%);
+  --color-gray-90: hsl(200deg 4% 93%);
+  --color-gray-80: hsl(200deg 4% 80%);
+  --color-gray-70: hsl(200deg 4% 70%);
+  --color-gray-40: hsl(200deg 4% 40%);
+  --color-gray-30: hsl(200deg 4% 30%);
+  --color-gray-20: hsl(200deg 4% 20%);
+  --color-gray-16: hsl(200deg 4% 16%);
+  --color-gray-12: hsl(200deg 4% 12%);
+  --color-gray-10: hsl(200deg 4% 10%);
+
+  --shade-90: hsl(0, 0%, 10%, 90%);
+  --shade-80: hsl(0, 0%, 10%, 80%);
+  --shade-70: hsl(0, 0%, 10%, 70%);
+
+  --color-surface-300: var(--color-gray-93);
+  --color-surface-400: var(--color-gray-97);
+  --color-surface-700: var(--color-gray-99);
+
+  --color-text-400: var(--color-gray-10);
+  --color-text-700: var(--color-gray-40);
+
+  --color-primary: hsl(200deg 70% 46%);
+  --color-primary-fade: hsl(200deg 70% 96%);
+  --color-primary-lighter: hsl(200deg 70% 50%);
+  --color-primary-darker: hsl(200deg 70% 42%);
+  --color-primary-opposite: var(--color-gray-99);
+
+  --color-success: hsl(120deg 50% 48%);
+  --color-success-fade: hsl(120deg 50% 96%);
+  --color-success-lighter: hsl(120deg 50% 52%);
+  --color-success-darker: hsl(120deg 50% 44%);
+  --color-success-opposite: var(--color-gray-99);
+
+  --color-danger: hsl(10deg 60% 48%);
+  --color-danger-fade: hsl(10deg 60% 96%);
+  --color-danger-lighter: hsl(10deg 60% 52%);
+  --color-danger-darker: hsl(10deg 60% 44%);
+  --color-danger-opposite: var(--color-gray-99);
+
+  --shadow-400: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}

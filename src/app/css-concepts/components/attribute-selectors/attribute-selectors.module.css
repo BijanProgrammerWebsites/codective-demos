@@ -1,0 +1,16 @@
+.attribute-selectors {
+  form {
+    display: grid;
+    gap: var(--density-large);
+
+    max-width: 37.5rem;
+
+    label {
+      display: grid;
+
+      input[type="password"] {
+        outline: 4px solid var(--color-primary);
+      }
+    }
+  }
+}

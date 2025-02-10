@@ -1,0 +1,37 @@
+.aside {
+  position: sticky;
+  inset-block-start: var(--density-large);
+
+  width: max-content;
+  height: fit-content;
+
+  section {
+    background-color: var(--color-surface-700);
+    box-shadow: var(--shadow-400);
+
+    padding: var(--density-normal);
+
+    .title {
+      margin-block-end: var(--density-small);
+
+      font-size: var(--fz-500);
+      font-weight: 700;
+    }
+
+    nav {
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: var(--density-small);
+
+        padding-inline: var(--density-normal);
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .aside {
+    display: none;
+  }
+}

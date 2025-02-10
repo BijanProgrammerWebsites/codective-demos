@@ -1,0 +1,16 @@
+.pseudo-selectors {
+  form {
+    display: grid;
+    gap: var(--density-normal);
+
+    .choice {
+      display: flex;
+      align-items: center;
+      gap: var(--density-small);
+
+      input:checked + label {
+        color: var(--color-primary-darker);
+      }
+    }
+  }
+}

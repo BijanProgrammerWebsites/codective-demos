@@ -1,0 +1,49 @@
+.page {
+  main {
+    form {
+      --gap: var(--density-large);
+
+      display: flex;
+      flex-direction: column;
+      gap: var(--gap);
+
+      .fields {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: var(--gap);
+
+        label {
+          flex: 1 0 40rem;
+
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+      button {
+        align-self: flex-end;
+
+        width: max-content;
+      }
+    }
+
+    [data-fixed="false"] & {
+      background-color: var(--color-gray-70);
+
+      form {
+        .primary {
+          display: none;
+        }
+      }
+    }
+
+    [data-fixed="true"] & {
+      form {
+        .danger {
+          display: none;
+        }
+      }
+    }
+  }
+}

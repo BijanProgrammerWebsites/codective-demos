@@ -1,0 +1,29 @@
+.nav-with-card {
+  > ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--density-large);
+
+    > li {
+      a {
+        background-color: var(--color-surface-700);
+        box-shadow: var(--shadow-400);
+
+        display: block;
+
+        padding: var(--density-large);
+
+        border: 1px solid transparent;
+        border-radius: var(--border-radius);
+
+        &:hover,
+        &:focus-visible {
+          border-color: var(--color-primary);
+
+          outline: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.page {
+  display: grid;
+
+  * {
+    scroll-margin-block-start: var(--density-large);
+
+    &:target {
+      outline: 4px dashed var(--color-primary);
+      outline-offset: 4px;
+    }
+  }
+
+  > * {
+    padding: var(--density-normal) var(--full-width-padding-inline);
+  }
+
+  .main-and-aside {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: var(--density-normal);
+  }
+}

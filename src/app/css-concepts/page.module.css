@@ -1,0 +1,28 @@
+.page {
+  --color-margin: hsl(30, 36%, 50%);
+  --color-border: hsl(40, 64%, 70%);
+  --color-padding: hsl(71, 37%, 63%);
+  --color-content: hsl(191, 28%, 63%);
+
+  padding-inline: var(--full-width-padding-inline);
+  padding-block-end: var(--density-larger);
+
+  header {
+    padding-block: var(--density-normal);
+  }
+
+  main {
+    > article {
+      background-color: var(--color-surface-700);
+      box-shadow: var(--shadow-400);
+
+      padding: var(--density-normal) var(--density-large);
+
+      > section {
+        border-block-start: 1px solid var(--color-gray-80);
+
+        padding: var(--density-larger) 0;
+      }
+    }
+  }
+}

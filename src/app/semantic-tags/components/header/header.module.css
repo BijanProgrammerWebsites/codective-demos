@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  nav {
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--density-normal);
+
+      li {
+        a {
+          padding: var(--density-small) var(--density-normal);
+
+          border-radius: 999rem;
+
+          font-size: var(--fz-300);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .header {
+    nav {
+      display: none;
+    }
+  }
+}

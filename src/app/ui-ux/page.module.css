@@ -1,0 +1,7 @@
+.page {
+  padding-inline: var(--full-width-padding-inline);
+
+  header {
+    padding-block: var(--density-normal);
+  }
+}

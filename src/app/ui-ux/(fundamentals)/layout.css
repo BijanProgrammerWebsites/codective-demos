@@ -1,0 +1,24 @@
+.fundamental {
+  > div {
+    > div {
+      padding-inline: var(--full-width-padding-inline);
+
+      header {
+        padding-block: var(--density-normal);
+      }
+
+      main {
+        background-color: var(--color-surface-700);
+        box-shadow: var(--shadow-400);
+
+        padding: var(--density-large);
+      }
+    }
+  }
+
+  .toggle {
+    position: fixed;
+    inset-block-end: 1rem;
+    inset-inline-end: 1rem;
+  }
+}

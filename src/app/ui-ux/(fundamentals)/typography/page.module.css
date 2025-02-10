@@ -1,0 +1,35 @@
+.page {
+  main {
+    display: flex;
+    flex-direction: column;
+
+    [data-fixed="false"] & {
+      gap: 0;
+
+      * {
+        font-family: cursive;
+        line-height: 120%;
+      }
+
+      h2 {
+        letter-spacing: 5px;
+      }
+
+      section {
+        h3 {
+          letter-spacing: -1px;
+        }
+      }
+    }
+
+    [data-fixed="true"] & {
+      gap: var(--density-large);
+
+      section {
+        p {
+          max-width: 60ch;
+        }
+      }
+    }
+  }
+}

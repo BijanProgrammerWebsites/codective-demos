@@ -1,0 +1,80 @@
+.page {
+  main {
+    form {
+      display: grid;
+      gap: var(--density-large);
+
+      .fields {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: inherit;
+
+        label {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+      button {
+        justify-self: end;
+      }
+    }
+
+    [data-fixed="false"] & {
+      form {
+        margin-inline-start: var(--density-larger);
+
+        .fields {
+          label {
+            &:nth-of-type(1) {
+              width: 30rem;
+            }
+          }
+
+          label {
+            &:nth-of-type(2) {
+              width: 20rem;
+
+              margin-inline-start: var(--density-larger);
+            }
+          }
+
+          label {
+            &:nth-of-type(3) {
+              width: 35rem;
+
+              margin-inline-start: var(--density-larger);
+            }
+          }
+
+          label {
+            &:nth-of-type(4) {
+              width: 15rem;
+            }
+          }
+        }
+
+        button {
+          justify-self: center;
+        }
+      }
+    }
+
+    [data-fixed="true"] & {
+      form {
+        .fields {
+          label {
+            flex: 1 0 40rem;
+
+            width: auto;
+          }
+        }
+
+        button {
+          margin-inline-end: 0;
+        }
+      }
+    }
+  }
+}

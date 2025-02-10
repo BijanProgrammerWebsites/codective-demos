@@ -1,0 +1,33 @@
+.box-sizing {
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--density-large);
+
+    .box {
+      --size: 10rem;
+
+      background-color: var(--color-content);
+      box-shadow: inset 0 0 0 2rem var(--color-padding);
+
+      display: grid;
+      place-items: center;
+
+      width: var(--size);
+      height: var(--size);
+
+      padding: 2rem;
+
+      border: 1rem solid var(--color-border);
+
+      &.border-box {
+        box-sizing: border-box;
+      }
+
+      &.content-box {
+        box-sizing: content-box;
+      }
+    }
+  }
+}

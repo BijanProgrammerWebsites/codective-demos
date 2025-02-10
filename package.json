@@ -21,6 +21,8 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.1.6",
+    "postcss": "^8.5.1",
+    "postcss-nesting": "^13.0.1",
     "prettier": "^3.5.0",
     "typescript": "^5"
   }

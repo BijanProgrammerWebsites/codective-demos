@@ -6,8 +6,8 @@ on:
 
 jobs:
   deploy:
-    uses: BijanProgrammerWebsites/hub/.github/workflows/deploy-static.yml@master
+    uses: BijanProgrammerWebsites/hub/.github/workflows/deploy-nextjs.yml@master
     with:
-      host: demos.codective.ir
-      base-href: /
+      process-name: demos.codective.ir
+      port: 3004
     secrets: inherit
